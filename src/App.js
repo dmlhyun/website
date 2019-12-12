@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Container } from "./common/components";
+import { background } from "./common/constants/colors";
+import { Home } from "./components/home";
+import { Projects } from "./components/projects";
+import { Resume } from "./components/resume";
+import { Secret } from "./components/secret";
 
-function App() {
+const Background = styled.div`
+  background: ${background};
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Background>
+      <Container align="center" justify="center">
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/secret">
+              <Secret />
+            </Route>
+          </Switch>
+        </Router>
+      </Container>
+    </Background>
   );
-}
+};
 
 export default App;
