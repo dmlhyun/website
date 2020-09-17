@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { EXPERIENCE, DESCRIPTION } from "../fixtures/experience";
 import { monthYearFormat } from "../../../common/helpers";
-import { Box, Section, Grid, Span, Text } from "../../../common/components";
+import { Box, Section, Grid, Span, Text, UList } from "../../../common/components";
 
 const renderExperience = () =>
   EXPERIENCE.map(({ key, company, job, duration }) => (
@@ -35,7 +35,7 @@ export const Experience = () => {
       <Grid direction="column">
         <Text>---- experience ----</Text>
         <Box direction="column">
-          <List>{renderExperience()}</List>
+          <List listStyle="none">{renderExperience()}</List>
         </Box>
       </Grid>
     </Section>
@@ -46,8 +46,7 @@ const ListItem = styled.li`
   margin-bottom: 30px;
 `;
 
-const List = styled.ul`
-  list-style: none;
+const List = styled(UList)`
   padding: 0;
 `;
 
