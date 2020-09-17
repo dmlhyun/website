@@ -34,8 +34,8 @@ export const SKILLS = {
     },
     {
       key: "rails",
-      value: "ruby on rails"
-    }
+      value: "rails"
+    },
   ],
   languages: [
     {

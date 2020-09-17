@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { Box, Section, Grid, Text, Span } from "../../../common/components";
+import { Box, Section, Grid, Text, Span, UList } from "../../../common/components";
 import { SKILLS } from "../fixtures/skills";
 
 const renderTools = () =>
@@ -25,11 +25,11 @@ export const Skills = () => {
         <Box>
           <Box direction="column">
             <Text>tools</Text>
-            <ul>{renderTools()}</ul>
+            <UList>{renderTools()}</UList>
           </Box>
           <Box direction="column">
             <Text>languages</Text>
-            <ul>{renderLangs()}</ul>
+            <UList>{renderLangs()}</UList>
           </Box>
         </Box>
       </Grid>

@@ -43,9 +43,10 @@ export const EXPERIENCE = [
 
 export const DESCRIPTION = {
   wealthsimple: [
-    "implemented features on the invest product for both mobile and web's Darwin launch",
+      "implemented deposit insights on the invest product to provide clients quantifiable analysis of past funding patterns",
     "created endpoints in a GraphQL proxy layer that calls to multiple microservices",
-    "to be continued..."
+      "implemented features to reduce customer toil and improve SLAs for withdrawal transactions from 70% to 95%",
+      "implemented a new internal transfers flow to an existing system in order to reduce time required to complete an internal transfer"
   ],
   snaptravel: [
     "developed a new server side rendered landing page to drive organic growth and revenue",
