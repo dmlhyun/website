@@ -11,7 +11,6 @@ import {
 } from "../../common/components";
 
 const GITHUB = "https://github.com/dmlhyun";
-const INSTAGRAM = "https://www.instagram.com/dmlhyun/";
 const LINKEDIN = "https://www.linkedin.com/in/euihyun/";
 
 const Container = styled(Box)`
@@ -43,10 +42,6 @@ const LIST_ITEMS = [
     href: LINKEDIN,
     content: "linkedin"
   },
-  {
-    href: INSTAGRAM,
-    content: "instagram"
-  }
 ];
 
 const renderRouteList = () => {

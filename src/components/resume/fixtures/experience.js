@@ -2,7 +2,7 @@ export const EXPERIENCE = [
   {
     key: "wealthsimple",
     company: "wealthsimple",
-    job: "software developer",
+    job: "software engineer",
     location: "toronto",
     duration: {
       start: "June 2019",
@@ -43,10 +43,9 @@ export const EXPERIENCE = [
 
 export const DESCRIPTION = {
   wealthsimple: [
-      "implemented deposit insights on the invest product to provide clients quantifiable analysis of past funding patterns",
-    "created endpoints in a GraphQL proxy layer that calls to multiple microservices",
-      "implemented features to reduce customer toil and improve SLAs for withdrawal transactions from 70% to 95%",
-      "implemented a new internal transfers flow to an existing system in order to reduce time required to complete an internal transfer"
+    "implemented multiple front end features for both web and mobile app using React, Angular and React Native",
+    "implemented features to reduce customer toil and improve SLAs for withdrawal transactions from 70% to 95%",
+    "implemented a new internal transfers flow to an existing system to reduce process time to improve SLA metrics"
   ],
   snaptravel: [
     "developed a new server side rendered landing page to drive organic growth and revenue",
