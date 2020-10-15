@@ -1,6 +1,6 @@
-import moment from "moment";
+import { format } from 'date-fns';
 
 export const monthYearFormat = date => {
   if (!date) return "";
-  return moment(date).format("MMM YYYY");
+  return format(new Date(date), "MMM Y");
 };
